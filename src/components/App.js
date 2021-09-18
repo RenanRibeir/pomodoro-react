@@ -28,7 +28,7 @@ class Clock extends React.Component {
   
   tick() {
 
-  if(this.state.play === true){
+  if(this.state.play === true && this.state.timesecunds > 0){
       this.setState({
         timesecunds: this.state.timesecunds - 1
       });
@@ -48,7 +48,7 @@ class Clock extends React.Component {
 
   coofe(){  
     this.setState({
-      timesecunds: 300,
+      timesecunds: 10,
       play: false
     }); 
   }
