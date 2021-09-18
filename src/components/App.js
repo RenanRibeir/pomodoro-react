@@ -48,7 +48,7 @@ class Clock extends React.Component {
 
   coofe(){  
     this.setState({
-      timesecunds: 10,
+      timesecunds: 300,
       play: false
     }); 
   }
